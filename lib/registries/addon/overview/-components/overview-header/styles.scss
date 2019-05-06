@@ -30,29 +30,22 @@
     }
 }
 
+.SideBarToggle {
+    width: 100%;
+}
+
+.Active {
+    h4 {
+        color: $primary-blue;
+    }
+}
+
 .ActionBar {
     display: flex;
     justify-content: space-between;
     background-color: rgba(38, 57, 71, 0.5);
     width: 100%;
-    padding: 12px;
-}
-
-.UserMessage {
-    p {
-        margin: 0 10px;
-        color: $white;
-    }
-}
-
-.LeftActionsContainer {
-    flex: 2;
-}
-
-.RightActionsContainer {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    padding: 8px 0;
 }
 
 .Dropdown {
@@ -199,4 +192,3 @@
         }
     }
 }
-

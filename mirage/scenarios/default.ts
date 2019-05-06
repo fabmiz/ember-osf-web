@@ -4,7 +4,11 @@ import config from 'ember-get-config';
 import { Permission } from 'ember-osf-web/models/osf-model';
 import User from 'ember-osf-web/models/user';
 
-import { draftRegisterNodeMultiple, forkNode, registerNodeMultiple } from '../helpers';
+import {
+    // draftRegisterNodeMultiple,
+    forkNode,
+    // registerNodeMultiple,
+} from '../helpers';
 
 const {
     dashboard: {
@@ -36,16 +40,16 @@ function registrationScenario(server: Server, currentUser: ModelInstance<User>) 
         index: 0,
     });
 
-    registerNodeMultiple(
-        server,
-        registrationNode,
-        12,
-        { currentUserPermissions: Object.values(Permission) },
-        'withArbitraryState',
-    );
-    draftRegisterNodeMultiple(server, registrationNode, 12, {}, 'withRegistrationMetadata');
+    // registerNodeMultiple(
+    //     server,
+    //     registrationNode,
+    //     12,
+    //     { currentUserPermissions: Object.values(Permission) },
+    //     'withArbitraryState',
+    // );
+    // draftRegisterNodeMultiple(server, registrationNode, 12, {}, 'withRegistrationMetadata');
 
-    server.create('registration', { id: 'beefs' });
+    // server.create('registration', { id: 'beefs' });
 
     server.create('registration', {
         id: 'decaf',
@@ -54,6 +58,26 @@ function registrationScenario(server: Server, currentUser: ModelInstance<User>) 
         linkedRegistrations: server.createList('registration', 2),
         currentUserPermissions: Object.values(Permission),
     }, 'withContributors', 'withComments', 'withDoi', 'withLicense', 'withAffiliatedInstitutions');
+    // server.create('registration', {
+    //     id: 'pendwithdrawal',
+    //     registrationSchema: server.schema.registrationSchemas.find('prereg_challenge'),
+    //     currentUserPermissions: Object.values(Permission),
+    // }, 'withContributors', 'isPendingWithdrawal');
+    server.create('registration', {
+        id: 'pending',
+        registrationSchema: server.schema.registrationSchemas.find('prereg_challenge'),
+        currentUserPermissions: Object.values(Permission),
+    }, 'withContributors', 'isPendingApproval');
+    server.create('registration', {
+        id: 'embargoed',
+        registrationSchema: server.schema.registrationSchemas.find('prereg_challenge'),
+        currentUserPermissions: Object.values(Permission),
+    }, 'withContributors', 'isEmbargoed');
+    // server.create('registration', {
+    //     id: 'pendembargo',
+    //     registrationSchema: server.schema.registrationSchemas.find('prereg_challenge'),
+    //     currentUserPermissions: Object.values(Permission),
+    // }, 'withContributors', 'isPendingEmbargoApproval');
 
     // Current user Bookmarks collection
     server.create('collection', { title: 'Bookmarks', bookmarks: true });
