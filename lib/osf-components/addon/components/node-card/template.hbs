@@ -49,7 +49,7 @@
                     local-class='NodeCard__dropdown'
                 >
                     <BsDropdown as |dd|>
-                        <dd.button local-class='NodeCard__dropdown-button'>
+                        <dd.button local-class='NodeCard__dropdown-toggle-button'>
                             <span aria-label={{t 'node_card.options'}} class='glyphicon glyphicon-option-horizontal'></span>
                         </dd.button>
                         <dd.menu @align='right' local-class='NodeCard__dropdown-list' as |menu|>
@@ -74,7 +74,7 @@
                             <menu.item role='menuitem'>
                                 <OsfButton
                                     data-analytics-scope='Delete'
-                                    local-class='NodeCard__dropdown-link'
+                                    local-class='NodeCard__dropdown-button'
                                     @onClick={{action @delete @node}}
                                 >
                                     {{t 'general.delete'}}
