@@ -31,7 +31,6 @@ export default class RegistriesDraftPage extends Controller {
             this.replaceRoute('drafts.draft.page', draftId, pageSlug);
         }
         this.draftRegistrationManager.onPageChange(pageIndex);
-        this.draftRegistrationManager.metadataChangeset.validate();
     }
 
     @action

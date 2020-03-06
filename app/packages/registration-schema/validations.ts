@@ -104,9 +104,6 @@ export function validateSubjects() {
             return {
                 context: {
                     type: 'min_subjects',
-                    translationArgs: {
-                        minLength: 1,
-                    },
                 },
             };
         }
