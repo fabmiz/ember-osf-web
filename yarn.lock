@@ -2243,10 +2243,10 @@
     "@types/ember__object" "*"
     "@types/rsvp" "*"
 
-"@types/ember-feature-flags@^4.0.5":
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/@types/ember-feature-flags/-/ember-feature-flags-4.0.6.tgz#726f4561651b1f9a565cb0934059fd49569bf6e0"
-  integrity sha512-+mtugEeeB9+6Wbev+CvAqBBaUvkyxZ8gJhI9cX5SQKRbeQA7d5B1U/PdnnHj3TQYpKBgvR7yWpuuOICIgCQK1A==
+"@types/ember-feature-flags@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@types/ember-feature-flags/-/ember-feature-flags-4.0.7.tgz#e49097ef2104a773cc1c755aee5967edbdfd611f"
+  integrity sha512-xj79MbXyq2GAiFQcY/d0j1aCO4F/mToNH1fJFLllUy2A2XoxeK+vmDPKiVvzxqHPunwTXfAfCiMf1QPbBB51cQ==
   dependencies:
     "@types/ember" "*"
 
