@@ -188,7 +188,7 @@
     "katex": "^0.11.1",
     "keen-analysis": "^2.0.0",
     "keen-dataviz": "^2.0.4",
-    "keen-tracking": "^2.0.9",
+    "keen-tracking": "^4.5.0",
     "lint-staged": "^8.1.5",
     "liquid-fire": "^0.30.0",
     "loader.js": "^4.7.0",
