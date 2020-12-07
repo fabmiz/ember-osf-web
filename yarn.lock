@@ -14359,10 +14359,10 @@ keen-dataviz@^2.0.4:
     c3 "^0.6.2"
     d3 "^5.4.0"
 
-keen-tracking@^2.0.9:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/keen-tracking/-/keen-tracking-2.0.10.tgz#937285c6e120675fbe10ae03bc9e9b15b4623ecd"
-  integrity sha512-kpxo4saI8Dg0PqyHOEkUd5gM3spwVdY1kit8oyS+xleSmhVOungr2tiS2b7fDrqS8gEq4kuEjuRRGqjHWGLWpQ==
+keen-tracking@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/keen-tracking/-/keen-tracking-4.5.1.tgz#10f7dda7d24fa3e68cada2019956d8480cb228cd"
+  integrity sha512-Hm5i2ObtAvjHSO5YUFdwpsjHa/d6Gm3xYpUc+L6jSo+7MiAMcgVlFcNGFjeAaGBDAAeNKMJyFNnw+NuTt7a03Q==
   dependencies:
     component-emitter "^1.2.0"
     js-cookie "2.1.0"
